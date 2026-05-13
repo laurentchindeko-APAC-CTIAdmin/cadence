@@ -1469,7 +1469,7 @@ Minimum endpoints:
         "codex_session_logs": [
           {
             "label": "latest",
-            "path": "/var/log/symphony/codex/MT-649/latest.log",
+            "path": "/var/log/cadence/codex/MT-649/latest.log",
             "url": null
           }
         ]
@@ -2091,7 +2091,7 @@ Use the same validation profiles as Section 17:
 - HTTP server extension honors CLI `--port` over `server.port`, uses a safe default bind host, and
   exposes the baseline endpoints/error semantics in Section 13.7 if shipped.
 - `linear_graphql` client-side tool extension exposes raw Linear GraphQL access through the
-  app-server session using configured Symphony auth.
+  app-server session using configured Cadence auth.
 - TODO: Persist retry queue and session metadata across process restarts.
 - TODO: Make observability settings configurable in workflow front matter without prescribing UI
   implementation details.
@@ -2108,7 +2108,7 @@ Use the same validation profiles as Section 17:
 
 ## Appendix A. SSH Worker Extension (OPTIONAL)
 
-This appendix describes a common extension profile in which Symphony keeps one central
+This appendix describes a common extension profile in which Cadence keeps one central
 orchestrator but executes worker runs on one or more remote hosts over SSH.
 
 Extension config:
